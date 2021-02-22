@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalynmal</title>
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--CSS Style Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-4 shadow mb-5 bg-black rounded">
+        <div class="row">
+            <div class="col col-sm-12 ml-4">
+                <h1 class = "text-center text-uppercase mb-5 mt-5 header1">Kalynmal esepteityn calculator</h1>
+                <p>Bilim dengeyi:</p>
+                <center>
+                    <select id = "bilim" class = "mb-2 ml-1">
+                        <option value = 1></option>
+                        <option value = 1.5>Bakalavr</option>
+                        <option value = 1.2>Kolledj</option>
+                        <option value = 1.05>Jogary bilim</option>
+                        <option value = 0.9>Orta bilim</option>
+                    </select>
+                    </center>
+                <p>Otbasy tabysy:</p>
+                <center>
+                    <select id = "tabys" class = "mb-2 ml-1">
+                        <option value = 1></option>
+                        <option value = 2>100,000$ kop</option>
+                        <option value = 1.5>50,000$ jane 100,000$ arasynda</option>
+                        <option value = 1.2>50,000$ kem</option>
+                    </select>
+                    </center>
+                <p>Sheberlik:</p>
+                    <form name = "talant" class = "mb-4">
+                        <input name = "option" type = "checkbox"  value = 100> Dombrada oinau
+                        <input class = "ml-2" name = "option" type = "checkbox"  value = 200> Jaksy as dayindau
+                        <input class = "ml-2" name = "option" type = "checkbox"  value = 150> Onai tyl tabu
+                        <input class = "ml-2" name = "option" type = "checkbox"  value = 100> Ademi an shyrkau
+                    </form>
+                <p>Jasy:</p>
+                    <form name = "age" class = "mb-4">
+                        <input name = "option" type = "radio" value = 1.5> 18-23 arasynda
+                        <input class = "ml-2" name = "option" type = "radio" value = 1.2> 24-47 arasynda
+                        <input class = "ml-2" name = "option" type = "radio" value = 0.95> 28+
+                    </form>
+                <p>Bedeli:</p>
+                    <form name = "bedel" class = "mb-4" >
+                        <input name = "option" type = "checkbox" value = 0.85> Ata-anasy turaly artyk soz
+                        <input class = "ml-2" name = "option" type = "checkbox" value = 0.9> Minezi turaly artyk soz
+                        <input class = "ml-2" name = "option" type = "checkbox" value = 200> Jalpy onyn minezy turaly artyk soz
+                    </form>
+                <div class="text-center mb-5">
+                    <p><button class = "btn btn-primary" onclick = "calculate()">Esepteu</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
